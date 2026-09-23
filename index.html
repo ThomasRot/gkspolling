@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Umfrage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="app">
+    <section id="schritt-klasse" class="schritt">
+      <h1>In welcher Klasse bist du?</h1>
+      <div id="klassen" class="kacheln"></div>
+    </section>
+
+    <section id="schritt-frage" class="schritt" hidden>
+      <button id="zurueck" class="zurueck" type="button">← zurück</button>
+      <div id="gewaehlte-klasse" class="badge"></div>
+      <h1 id="frage"></h1>
+      <div id="antworten" class="antworten"></div>
+      <button id="absenden" class="absenden" type="button" disabled>Fertig ✓</button>
+      <p id="fehler" class="fehler" hidden>Das hat nicht geklappt. Bitte nochmal drücken.</p>
+    </section>
+
+    <section id="schritt-danke" class="schritt" hidden>
+      <div class="gross">🎉</div>
+      <h1>Danke!</h1>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
